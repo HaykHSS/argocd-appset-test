@@ -24,7 +24,6 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 team: {{ .Values.team }}
 provider: {{ .Values.provider }}
-project: {{ .Values.project }}
 cluster: {{ .Values.cluster }}
 region: {{ .Values.region }}
 environment: {{ .Release.Name }}
