@@ -1,25 +1,25 @@
-# base-chart:
-#   vaultEnabled: true
-#   ## HPA ##
-#   hpaEnabled: false
+base-chart:
+  vaultEnabled: true
+  ## HPA ##
+  hpaEnabled: false
 
-#   ## DEPLOYMENT ##
-#   resources:
-#     limits:
-#       cpu: 1
-#       memory: 2Gi
-#     requests:
-#       cpu: 0.5
-#       memory: 1Gi
+  ## DEPLOYMENT ##
+  resources:
+    limits:
+      cpu: 1
+      memory: 2Gi
+    requests:
+      cpu: 0.5
+      memory: 1Gi
 
-#   volumeMounts:
-#     - name: dev-rsc-vol
-#       mountPath: /files
+  volumeMounts:
+    - name: dev-rsc-vol
+      mountPath: /files
 
-#   volumes:
-#     - name: dev-rsc-vol
-#       persistentVolumeClaim:
-#         claimName: "dev-rsc-nfs-pvc"
+  volumes:
+    - name: dev-rsc-vol
+      persistentVolumeClaim:
+        claimName: "dev-rsc-nfs-pvc"
 
 ## EXTERNAL TEMPLATES ##
 server: dev-rsc-nfs-server.rsc.svc.cluster.local
