@@ -7,9 +7,9 @@ app: app-name-here
 team: team-name-here
 
 provider: gcp
-project: project-here
-cluster: cluster-here
-region: us-east4
+project: "project-here"
+cluster: "cluster-here"
+region: "us-east4"
 
 chartVersion: 0.0.1
 
