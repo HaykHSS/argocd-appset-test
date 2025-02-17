@@ -1,4 +1,0 @@
-## EXTERNAL TEMPLATES ##
-server: dev-rsc-nfs-server.rsc.svc.cluster.local
-nfsDeploymentEnabled: true
-pvpvcEnabled: true
