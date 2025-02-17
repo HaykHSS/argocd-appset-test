@@ -22,11 +22,6 @@ version: {{ include "base-chart.deployname" . }}-v1
 tags.datadoghq.com/service: {{ include "base-chart.fullname" . }}
 app.kubernetes.io/managed-by: {{ .Release.Service }}
 app.kubernetes.io/instance: {{ .Release.Name }}
-team: {{ .Values.team }}
-provider: {{ .Values.provider }}
-cluster: {{ .Values.cluster }}
-region: {{ .Values.region }}
-environment: {{ .Release.Name }}
 tags.datadoghq.com/env: {{ .Release.Name }}
 tags.datadoghq.com/version: {{ .Values.commit | quote | default "unknown" }}
 {{- end -}}
